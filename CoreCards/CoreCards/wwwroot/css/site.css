@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #76834e;
+    background-color: #c3b8b8;
 }
 
 
@@ -11,7 +11,10 @@
     padding: 2%;
     border-radius: 20px;
     border: solid black 1px;
-    background-color: antiquewhite;
+    background-color:grey;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
@@ -34,7 +37,7 @@
 .card {
     background-repeat: no-repeat;
     background-position: bottom;
-    background-color: #808080;
+    background-color: #869c71;
     text-align: center;
     color: black;
     border: black solid 1px;

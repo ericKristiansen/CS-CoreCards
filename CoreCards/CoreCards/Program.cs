@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
 namespace CoreCards
 {
     public class Program
     {
+        /// <summary>
+        /// Provide a point of entry for the application.
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
