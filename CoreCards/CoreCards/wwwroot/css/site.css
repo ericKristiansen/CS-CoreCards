@@ -1,0 +1,65 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #76834e;
+}
+
+
+.body-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+    border-radius: 20px;
+    border: solid black 1px;
+    background-color: antiquewhite;
+}
+
+
+.Hearts {
+    background-image: url("/images/Hearts.png");
+}
+
+.Clubs {
+    background-image: url("/images/Clubs.png");
+}
+
+.Diamonds {
+    background-image: url("/images/Diamonds.png");
+}
+
+.Spades {
+    background-image: url("/images/Spades.png");
+}
+
+.card {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #808080;
+    text-align: center;
+    color: black;
+    border: black solid 1px;
+    border-radius: 5px;
+    height: 150px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1% 0;
+    margin: 0 0 1% 0;
+}
+
+.cardContainer {
+    width: 100%;
+}
+
+.Clear {
+    clear: both;
+}
+
+.footer {
+    border: 1px black solid;
+    text-align: center;
+    width: 90%;
+    color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: black;
+}

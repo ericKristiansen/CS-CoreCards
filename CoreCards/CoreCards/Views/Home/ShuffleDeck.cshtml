@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Shuffle";
+}
+<h3>@ViewData["Message"]</h3>
+
+
+
+<div class="cardContainer">
+    @foreach (var card in ViewData["Cards"] as IOrderedEnumerable<CoreCards.Models.Card>)
+    {
+        <div class="card col-sm-1 @card.Suit">
+            @card.ToString()
+        </div>
+    }
+</div>
