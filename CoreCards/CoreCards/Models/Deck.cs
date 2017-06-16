@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace CoreCards.Models
 {
@@ -13,11 +12,17 @@ namespace CoreCards.Models
 
         public List<Card> Cards => cards;
 
+        /// <summary>
+        /// Initialize the deck.
+        /// </summary>
         public Deck()
         {
             generateDeck();
         }
 
+        /// <summary>
+        /// Generate each card of the deck to a suit and a value.
+        /// </summary>
         private void generateDeck()
         {
             for (int suit = (int)CardSuit.Hearts; suit <= (int)CardSuit.Spades; suit++)
@@ -29,9 +34,22 @@ namespace CoreCards.Models
             }
         }
 
+        /// <summary>
+        /// Return a randomized deck of cards.
+        /// </summary>
+        /// <returns></returns>
         public IOrderedEnumerable<Card> ShuffleDeck()
         {
             return cards.OrderBy(card => random.Next());
+        }
+
+        /// <summary>
+        /// Return the cards in ascending order with the aces as a low value.
+        /// </summary>
+        /// <returns></returns>
+        public IOrderedEnumerable<Card> GetAscendingCardsKingHigh()
+        {
+            return cards.OrderBy(card => card.Value);
         }
 
         /* Not Implemented
@@ -40,11 +58,10 @@ namespace CoreCards.Models
             return cards.OrderBy(card => { if (card.Value == CardValue.Ace){ return CardValue.AceHigh; }return card.Value; });
         } */
 
-        public IOrderedEnumerable<Card> GetAscendingCardsKingHigh()
-        {
-            return cards.OrderBy(card => card.Value);
-        }
-
+        /// <summary>
+        /// Override the to string method to return a customized string value.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return TO_STRING_VALUE;
@@ -52,6 +69,9 @@ namespace CoreCards.Models
 
     }
 
+    /// <summary>
+    /// Provide a nice enumeration to make the application more readable and robust.
+    /// </summary>
     public enum CardSuit
     {
         Hearts = 1,
@@ -60,6 +80,9 @@ namespace CoreCards.Models
         Spades
     };
 
+    /// <summary>
+    /// Provide a nice enumeration to make the application more readable and robust.
+    /// </summary>
     public enum CardValue
     {
         Ace = 1,

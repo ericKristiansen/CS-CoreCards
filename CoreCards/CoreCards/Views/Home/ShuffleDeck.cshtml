@@ -1,10 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Shuffle";
 }
+
 <h3>@ViewData["Message"]</h3>
 
-
-
+<!-- Provide a container to display the deck of cards. -->
 <div class="cardContainer">
     @foreach (var card in ViewData["Cards"] as IOrderedEnumerable<CoreCards.Models.Card>)
     {

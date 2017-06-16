@@ -1,6 +1,11 @@
 C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\bin\Debug\netcoreapp1.1\Testing123.deps.json
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\bin\Debug\netcoreapp1.1\Testing123.runtimeconfig.json
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\bin\Debug\netcoreapp1.1\Testing123.runtimeconfig.dev.json
 C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\bin\Debug\netcoreapp1.1\Testing123.dll
-C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\bin\Debug\netcoreapp1.1\CoreCards.dll
-C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\bin\Debug\netcoreapp1.1\CoreCards.pdb
 C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\obj\Debug\netcoreapp1.1\Testing123.csprojResolveAssemblyReference.cache
 C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\obj\Debug\netcoreapp1.1\Testing123.AssemblyInfo.cs
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\bin\Debug\netcoreapp1.1\CoreCards.dll
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\bin\Debug\netcoreapp1.1\CoreCards.pdb
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\bin\Debug\netcoreapp1.1\Testing123.pdb
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\obj\Debug\netcoreapp1.1\Testing123.dll
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\Testing123\obj\Debug\netcoreapp1.1\Testing123.pdb

@@ -1625,8 +1625,51 @@
           "lib/netstandard1.6/nunit.framework.dll": {}
         }
       },
+      "NUnit.Console/3.6.1": {
+        "type": "package",
+        "dependencies": {
+          "NUnit.ConsoleRunner": "3.6.1",
+          "NUnit.Extension.NUnitProjectLoader": "3.5.0",
+          "NUnit.Extension.NUnitV2Driver": "3.6.0",
+          "NUnit.Extension.NUnitV2ResultWriter": "3.5.0",
+          "NUnit.Extension.TeamCityEventListener": "1.0.2",
+          "NUnit.Extension.VSProjectLoader": "3.5.0"
+        }
+      },
+      "NUnit.ConsoleRunner/3.6.1": {
+        "type": "package"
+      },
+      "NUnit.Extension.NUnitProjectLoader/3.5.0": {
+        "type": "package"
+      },
+      "NUnit.Extension.NUnitV2Driver/3.6.0": {
+        "type": "package"
+      },
+      "NUnit.Extension.NUnitV2ResultWriter/3.5.0": {
+        "type": "package"
+      },
+      "NUnit.Extension.TeamCityEventListener/1.0.2": {
+        "type": "package"
+      },
+      "NUnit.Extension.VSProjectLoader/3.5.0": {
+        "type": "package"
+      },
       "NUnit3TestAdapter/3.7.0": {
         "type": "package"
+      },
+      "NUnitLite/3.7.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.Runtime.Loader": "4.3.0",
+          "System.Threading.Thread": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.6/nunitlite.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/nunitlite.dll": {}
+        }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
@@ -3658,7 +3701,9 @@
           "Microsoft.NETCore.App": "1.1.1",
           "Microsoft.VisualStudio.Web.BrowserLink": "1.1.2",
           "NUnit": "3.7.1",
-          "NUnit3TestAdapter": "3.7.0"
+          "NUnit.Console": "3.6.1",
+          "NUnit3TestAdapter": "3.7.0",
+          "NUnitLite": "3.7.1"
         }
       }
     }
@@ -5038,6 +5083,93 @@
         "nunit.nuspec"
       ]
     },
+    "NUnit.Console/3.6.1": {
+      "sha512": "lQMRU486A4dazD6H+THNUkrPX6lKgCSAl4b55nFCDxLQMTg2UrjzNKA23DHy9aObNQmR9IrQ+zvjNXw5yIaTFA==",
+      "type": "package",
+      "path": "nunit.console/3.6.1",
+      "files": [
+        "nunit.console.3.6.1.nupkg.sha512",
+        "nunit.console.nuspec"
+      ]
+    },
+    "NUnit.ConsoleRunner/3.6.1": {
+      "sha512": "2JWWlSZ03NGYLk6wc/3n6iQFixociL25o7Alc20SdwCGdku1qD6NBz4kNglK+97YkuPiPV5rlx5s9NIStKlyxQ==",
+      "type": "package",
+      "path": "nunit.consolerunner/3.6.1",
+      "files": [
+        "CHANGES.txt",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "nunit.consolerunner.3.6.1.nupkg.sha512",
+        "nunit.consolerunner.nuspec",
+        "tools/Mono.Cecil.dll",
+        "tools/nunit-agent-x86.exe",
+        "tools/nunit-agent-x86.exe.config",
+        "tools/nunit-agent.exe",
+        "tools/nunit-agent.exe.config",
+        "tools/nunit.engine.api.dll",
+        "tools/nunit.engine.api.xml",
+        "tools/nunit.engine.dll",
+        "tools/nunit.nuget.addins",
+        "tools/nunit3-console.exe",
+        "tools/nunit3-console.exe.config"
+      ]
+    },
+    "NUnit.Extension.NUnitProjectLoader/3.5.0": {
+      "sha512": "oe+PYd5uf0u3WoV6txz6esPe5I9I3PV0o96KoEVvJs+AYMG9MCebmnMq7N8dYJrWiDKIuSDwZ6WTs84XTDZ/Pw==",
+      "type": "package",
+      "path": "nunit.extension.nunitprojectloader/3.5.0",
+      "files": [
+        "nunit.extension.nunitprojectloader.3.5.0.nupkg.sha512",
+        "nunit.extension.nunitprojectloader.nuspec",
+        "tools/nunit-project-loader.dll"
+      ]
+    },
+    "NUnit.Extension.NUnitV2Driver/3.6.0": {
+      "sha512": "TZIWwZaND/91p9FCuZH0vJLNPVyFV4No6XHgtd2ZLwN6MQZVPWdI4apL38ejsKAFn3nF1yTlvJgYF1l2mlo8wA==",
+      "type": "package",
+      "path": "nunit.extension.nunitv2driver/3.6.0",
+      "files": [
+        "LICENSE.txt",
+        "nunit.extension.nunitv2driver.3.6.0.nupkg.sha512",
+        "nunit.extension.nunitv2driver.nuspec",
+        "tools/nunit.core.dll",
+        "tools/nunit.core.interfaces.dll",
+        "tools/nunit.v2.driver.addins",
+        "tools/nunit.v2.driver.dll"
+      ]
+    },
+    "NUnit.Extension.NUnitV2ResultWriter/3.5.0": {
+      "sha512": "qz5Xxd+yBStdMP/jIIFz01cN3x8rKBCoF3alFHa5Gr+lZqdFyV1DN+3l8AlHrDSX5OzAz+T5CCBkgDim/hqGkQ==",
+      "type": "package",
+      "path": "nunit.extension.nunitv2resultwriter/3.5.0",
+      "files": [
+        "nunit.extension.nunitv2resultwriter.3.5.0.nupkg.sha512",
+        "nunit.extension.nunitv2resultwriter.nuspec",
+        "tools/nunit-v2-result-writer.dll"
+      ]
+    },
+    "NUnit.Extension.TeamCityEventListener/1.0.2": {
+      "sha512": "VWtqluuxC1VizTdD/GcdppF1AJGa0sGIGwRKpo8cuAC9Hcw5X4znraTLyVc62Wqj/+C9VwTZ4FI88GZHexYPNg==",
+      "type": "package",
+      "path": "nunit.extension.teamcityeventlistener/1.0.2",
+      "files": [
+        "LICENSE.txt",
+        "nunit.extension.teamcityeventlistener.1.0.2.nupkg.sha512",
+        "nunit.extension.teamcityeventlistener.nuspec",
+        "tools/teamcity-event-listener.dll"
+      ]
+    },
+    "NUnit.Extension.VSProjectLoader/3.5.0": {
+      "sha512": "JbWSqy3Kh2EkzaHd0GDh3jfdzOf6w3v5h3UbKnR9yUJix9XjucZbFmQuj9DYsvpzVKrWGtvQLLrWZYOo6uBGrw==",
+      "type": "package",
+      "path": "nunit.extension.vsprojectloader/3.5.0",
+      "files": [
+        "nunit.extension.vsprojectloader.3.5.0.nupkg.sha512",
+        "nunit.extension.vsprojectloader.nuspec",
+        "tools/vs-project-loader.dll"
+      ]
+    },
     "NUnit3TestAdapter/3.7.0": {
       "sha512": "bne2ti74G2Tqbq8iolG0rgVCerItqnJX0bfArUrmkv2p2WYPYZ6ECUXmLkmIl8tXu0F23GywCLJLCa/e5pJTWw==",
       "type": "package",
@@ -5053,6 +5185,32 @@
         "tools/NUnit3.TestAdapter.dll",
         "tools/nunit.engine.api.dll",
         "tools/nunit.engine.dll"
+      ]
+    },
+    "NUnitLite/3.7.1": {
+      "sha512": "WDpRmdUoLFLRGOihgo7E8sw0uZ/nHInALkn1wg841z/fe8CPrH1Rl4j6SsBv4rTYOCRF2L50qyOyLOTX1Jqd/g==",
+      "type": "package",
+      "path": "nunitlite/3.7.1",
+      "files": [
+        "CHANGES.md",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "content/Program.cs",
+        "content/Program.vb",
+        "lib/net20/nunitlite.dll",
+        "lib/net35/nunitlite.dll",
+        "lib/net40/nunitlite.dll",
+        "lib/net45/nunitlite.dll",
+        "lib/netstandard1.3/nunitlite.dll",
+        "lib/netstandard1.6/nunitlite.dll",
+        "nunitlite.3.7.1.nupkg.sha512",
+        "nunitlite.nuspec",
+        "tools/install.ps1",
+        "tools/net20/nunitlite-runner.exe",
+        "tools/net35/nunitlite-runner.exe",
+        "tools/net40/nunitlite-runner.exe",
+        "tools/net45/nunitlite-runner.exe",
+        "tools/netcore1.0/nunitlite-runner.exe"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -9831,7 +9989,9 @@
     ".NETCoreApp,Version=v1.1": [
       "CoreCards >= 1.0.0",
       "Microsoft.NETCore.App >= 1.1.1",
-      "NUnit >= 3.7.1"
+      "NUnit >= 3.7.1",
+      "NUnit.Console >= 3.6.1",
+      "NUnitLite >= 3.7.1"
     ]
   },
   "packageFolders": {
@@ -9869,6 +10029,14 @@
             "target": "Package",
             "version": "1.1.1",
             "autoReferenced": true
+          },
+          "NUnit.Console": {
+            "target": "Package",
+            "version": "3.6.1"
+          },
+          "NUnitLite": {
+            "target": "Package",
+            "version": "3.7.1"
           }
         }
       }

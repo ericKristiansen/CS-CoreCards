@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿
 namespace CoreCards.Utl
 {
+    /// <summary>
+    /// Provide a class to host constants for application wide use.
+    /// </summary>
     public static class Constants
     {
         public static string CARDS => "Cards";

@@ -16,3 +16,12 @@ C:\Users\HenryWinkler\Documents\Visual Studio 2017\Projects\CoreCards\CoreCards\
 C:\Users\HenryWinkler\Documents\Visual Studio 2017\Projects\CoreCards\CoreCards\obj\Debug\netcoreapp1.1\CoreCards.AssemblyInfo.cs
 C:\Users\HenryWinkler\Documents\Visual Studio 2017\Projects\CoreCards\CoreCards\obj\Debug\netcoreapp1.1\CoreCards.dll
 C:\Users\HenryWinkler\Documents\Visual Studio 2017\Projects\CoreCards\CoreCards\obj\Debug\netcoreapp1.1\CoreCards.pdb
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\CoreCards\bin\Debug\netcoreapp1.1\CoreCards.deps.json
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\CoreCards\bin\Debug\netcoreapp1.1\CoreCards.runtimeconfig.json
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\CoreCards\bin\Debug\netcoreapp1.1\CoreCards.runtimeconfig.dev.json
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\CoreCards\bin\Debug\netcoreapp1.1\CoreCards.dll
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\CoreCards\bin\Debug\netcoreapp1.1\CoreCards.pdb
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\CoreCards\obj\Debug\netcoreapp1.1\CoreCards.csprojResolveAssemblyReference.cache
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\CoreCards\obj\Debug\netcoreapp1.1\CoreCards.AssemblyInfo.cs
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\CoreCards\obj\Debug\netcoreapp1.1\CoreCards.dll
+C:\Users\ekristiansen\Documents\GitHub\CS-CoreCards\CoreCards\CoreCards\obj\Debug\netcoreapp1.1\CoreCards.pdb
