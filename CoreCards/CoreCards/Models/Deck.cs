@@ -8,7 +8,7 @@ namespace CoreCards.Models
     {
         private const string TO_STRING_VALUE = "Deck Type Object";
         private List<Card> cards = new List<Card>();
-        private Random random = new Random();
+        private static Random random = new Random();
 
         public List<Card> Cards => cards;
 
@@ -52,11 +52,14 @@ namespace CoreCards.Models
             return cards.OrderBy(card => card.Value);
         }
 
-        /* Not Implemented
+        /// <summary>
+        /// Return the cards in ascending order with the aces as a high value.
+        /// </summary>
+        /// <returns></returns>
         public IOrderedEnumerable<Card> GetAscendingCardsAceHigh()
         {
-            return cards.OrderBy(card => { if (card.Value == CardValue.Ace){ return CardValue.AceHigh; }return card.Value; });
-        } */
+            return cards.OrderBy(card => { if (card.Value == CardValue.Ace){ return CardValue.AceHigh; } return card.Value; });
+        }
 
         /// <summary>
         /// Override the to string method to return a customized string value.
@@ -65,6 +68,24 @@ namespace CoreCards.Models
         public override string ToString()
         {
             return TO_STRING_VALUE;
+        }
+
+        /// <summary>
+        /// Return the number of common card positions with the default deck.
+        /// </summary>
+        /// <param name="ordCard"></param>
+        /// <returns></returns>
+        public int GetNumberEqualCardPositions(IOrderedEnumerable<Card> ordCard)
+        {
+            int commonCards = 0;
+            for (int cardIndex = 0; cardIndex < cards.Count; cardIndex++)
+            {
+                if (ordCard.ElementAt<Card>(cardIndex).ToString().Equals(cards.ElementAt(cardIndex).ToString()))
+                {
+                    commonCards++;
+                }
+            }
+            return commonCards;
         }
 
     }

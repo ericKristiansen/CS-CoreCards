@@ -9,16 +9,35 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot/js\test\npm-debug.log" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\images\Clubs.png" />
     <Content Include="wwwroot\images\Hearts.png" />
+    <Content Include="wwwroot\js\addScript.js" />
+    <Content Include="wwwroot\js\package.json" />
+    <Content Include="wwwroot\js\site.js" />
+    <Content Include="wwwroot\js\site.min.js" />
+    <Content Include="wwwroot\js\test.html" />
+    <Content Include="wwwroot\lib\jasmine-html.js" />
+    <Content Include="wwwroot\lib\jasmine.js" />
+    <Content Include="wwwroot\lib\jasmine\boot.js" />
+    <Content Include="wwwroot\lib\jasmine\console.js" />
+    <Content Include="wwwroot\lib\jasmine\jasmine-html.js" />
+    <Content Include="wwwroot\lib\jasmine\jasmine.css" />
+    <Content Include="wwwroot\lib\jasmine\jasmine.js" />
+    <Content Include="wwwroot\lib\jasmine\jasmine_favicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="jasmine" Version="2.6.3" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+    <PackageReference Include="Node.js" Version="5.3.0" />
     <PackageReference Include="NUnit" Version="3.7.1" />
     <PackageReference Include="NUnit.Console" Version="3.6.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.7.0" />

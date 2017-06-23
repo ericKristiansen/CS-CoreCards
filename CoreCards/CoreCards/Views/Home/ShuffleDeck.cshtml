@@ -1,15 +1,22 @@
 ﻿@{
-    ViewData["Title"] = "Shuffle";
+    ViewData[CoreCards.Utl.Constants.TITLE] = CoreCards.Utl.Constants.SHUFFLE;
 }
 
-<h3>@ViewData["Message"]</h3>
+<h3>@ViewData[CoreCards.Utl.Constants.MESSAGE]</h3>
 
 <!-- Provide a container to display the deck of cards. -->
 <div class="cardContainer">
-    @foreach (var card in ViewData["Cards"] as IOrderedEnumerable<CoreCards.Models.Card>)
+    @foreach (var card in ViewData[CoreCards.Utl.Constants.CARDS] as IOrderedEnumerable<CoreCards.Models.Card>)
     {
         <div class="card col-sm-1 @card.Suit">
             @card.ToString()
         </div>
     }
 </div>
+
+<script>
+    try {
+        window.onload = setUpShuffleView();
+    }
+    catch (e) { alert(e);}
+</script>

@@ -47,7 +47,16 @@
     font-weight: bold;
     padding: 1% 0;
     margin: 0 0 1% 0;
+    opacity: 0;
 }
+
+.DeckImage {
+    height: 300px;
+    position:center;
+    background-image: url("../images/deck.png");
+    background-size: 100% 100%;
+}
+
 
 .cardContainer {
     width: 100%;
@@ -55,6 +64,10 @@
 
 .Clear {
     clear: both;
+}
+
+.MaxWidth {
+    width: 100%;
 }
 
 .footer {

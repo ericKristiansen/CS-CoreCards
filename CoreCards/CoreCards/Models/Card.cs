@@ -35,6 +35,6 @@ namespace CoreCards.Models
         {
             return value.ToString() + Utl.Constants.SINGLE_SPACE_STRING + suit.ToString();
         }
-
     }
+
 }

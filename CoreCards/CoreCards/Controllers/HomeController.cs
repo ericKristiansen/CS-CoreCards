@@ -28,9 +28,9 @@ namespace CoreCards.Controllers
         /// <returns></returns>
         public IActionResult ShuffleDeck(string method)
         {
-            ViewData[Utl.Constants.MESSAGE] = Utl.Constants.YOUR_CARDS;
+            ViewData[Constants.MESSAGE] = Constants.YOUR_CARDS;
             deck = new Deck();
-            getCards(method);
+            assignCards(method);
 
             return View();
         }
@@ -48,10 +48,11 @@ namespace CoreCards.Controllers
         /// Assign the cards of appropriate order to the appropriate key in the 'ViewData' object.
         /// </summary>
         /// <param name="method"></param>
-        private void getCards(string method)
+        private void assignCards(string method)
         {
             if (method == Constants.SHUFFLE) { ViewData[Constants.CARDS] = deck.ShuffleDeck(); }
-            else { ViewData[Constants.CARDS] = deck.GetAscendingCardsKingHigh(); }
+            else if (method == Constants.KING_HIGH){ ViewData[Constants.CARDS] = deck.GetAscendingCardsKingHigh(); }
+            else { ViewData[Constants.CARDS] = deck.GetAscendingCardsAceHigh(); }
         }
     }
 }

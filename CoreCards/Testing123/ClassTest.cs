@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using CoreCards.Models;
 using System.Linq;
 
@@ -53,23 +50,18 @@ namespace Testing123
             Assert.That(new Deck().Cards[index].ToString(), Is.EqualTo(expected));
         }
 
-        /* *********************
-         * The shuffle is random. It may be the case where this test isn't always aserted without exception.
-         * The test is that this is an infrequent collision.
-         * Because of the occasional exception, this test is commented out. Uncomment it to run the test.
-         * ************************ /
-         /// <summary>
-         /// This method tests whether the deck shuffle method returns a reordered deck.
-         /// </summary>
-         /// <param name="index"></param>
-         /// <param name="expected"></param>
-        [TestCase(5, "Six Hearts")]
-        [TestCase(13, "Ace Diamonds")]
-        [TestCase(51, "King Spades")]
-        public void EnsureShufflePosition(int index, string expected)
+        /// <summary>
+        /// This method tests whether the shuffle method returns a deck with not more than
+        /// the expected card positions in common.
+        /// </summary>
+        /// <param name="expected"></param>
+        [TestCase(10)]
+        [TestCase(5)]
+        public void EnsureShufflePosition(int expected)
         {
-            Assert.That((new Deck().ShuffleDeck()).ElementAt<Card>(index).ToString() , Is.Not.EqualTo(expected));
-        }  */
+            Deck d = new Deck();
+            Assert.That(d.GetNumberEqualCardPositions(d.ShuffleDeck()), Is.Not.GreaterThan(expected));
+        }  
 
         /// <summary>
         /// This method ensures that the top position of value belongs to the king cards of every suit.
@@ -85,6 +77,19 @@ namespace Testing123
             Assert.That(new Deck().GetAscendingCardsKingHigh().ElementAt<Card>(index).ToString(), Is.EqualTo(expected));
         }
 
+        /// <summary>
+        /// This method ensures that the top position of value belongs to the king cards of every suit.
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="expected"></param>
+        [TestCase(48, "Ace Hearts")]
+        [TestCase(49, "Ace Diamonds")]
+        [TestCase(50, "Ace Clubs")]
+        [TestCase(51, "Ace Spades")]
+        public void EnsureAcesHigh(int index, string expected)
+        {
+            Assert.That(new Deck().GetAscendingCardsAceHigh().ElementAt<Card>(index).ToString(), Is.EqualTo(expected));
+        }
 
     }
 }

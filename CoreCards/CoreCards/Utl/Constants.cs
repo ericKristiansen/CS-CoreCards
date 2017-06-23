@@ -9,8 +9,10 @@ namespace CoreCards.Utl
         public static string CARDS => "Cards";
         public static string SHUFFLE => "Shuffle";
         public static string KING_HIGH => "KingHigh";
+        public static string ACE_HIGH => "AceHigh";
 
         public static string MESSAGE => "Message";
+        public static string TITLE => "Title";
 
         public static string SINGLE_SPACE_STRING => " ";
         public static string IMAGES_FOLDER = "/images/";
