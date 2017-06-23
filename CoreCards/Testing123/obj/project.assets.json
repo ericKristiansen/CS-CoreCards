@@ -5,6 +5,12 @@
       "jasmine/2.6.3": {
         "type": "package"
       },
+      "KarmaGruntJSUnit.MSBuild/1.0.7": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -3701,6 +3707,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
+          "KarmaGruntJSUnit.MSBuild": "1.0.7",
           "Microsoft.ApplicationInsights.AspNetCore": "2.0.1",
           "Microsoft.AspNetCore": "1.1.2",
           "Microsoft.AspNetCore.Mvc": "1.1.3",
@@ -3732,6 +3739,22 @@
         "content/Scripts/jasmine/jasmine.js",
         "jasmine.2.6.3.nupkg.sha512",
         "jasmine.nuspec"
+      ]
+    },
+    "KarmaGruntJSUnit.MSBuild/1.0.7": {
+      "sha512": "yi8iFjQYr70pMx06pYlrsXrtjlHCxbvFPqwfli6yQlDKQb3iydGR5gaRH1XRAAZV9te4jEBKGpoMEinnovRoHA==",
+      "type": "package",
+      "path": "karmagruntjsunit.msbuild/1.0.7",
+      "files": [
+        "build/KarmaGruntJSUnit.MSBuild.Targets",
+        "content/Gruntfile.js",
+        "content/TestScripts/DefaultTest.js",
+        "content/karma.conf.js",
+        "content/package.json",
+        "karmagruntjsunit.msbuild.1.0.7.nupkg.sha512",
+        "karmagruntjsunit.msbuild.nuspec",
+        "license.txt",
+        "tools/KarmaGruntErrorReporter.MSBuild.dll"
       ]
     },
     "Libuv/1.9.1": {

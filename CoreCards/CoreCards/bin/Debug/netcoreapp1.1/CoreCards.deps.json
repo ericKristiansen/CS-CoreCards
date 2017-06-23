@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "bb1ce2fec187f5224f18e48ab0af026999a213e7"
+    "signature": "70db98e28ffbf6d1028d450e308895e4451bfb82"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v1.1": {
       "corecards/1.0.0": {
         "dependencies": {
+          "KarmaGruntJSUnit.MSBuild": "1.0.7",
           "Microsoft.ApplicationInsights.AspNetCore": "2.0.1",
           "Microsoft.AspNetCore": "1.1.2",
           "Microsoft.AspNetCore.Mvc": "1.1.3",
@@ -45,6 +46,7 @@
         }
       },
       "jasmine/2.6.3": {},
+      "karmagruntjsunit.msbuild/1.0.7": {},
       "microsoft.applicationinsights/2.2.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -3065,6 +3067,13 @@
       "sha512": "sha512-Hqt8alukSAjlwRq7AIOG8YODQ1ohuKz9TsCx4jVpzQ+mFUlKgF2HSjo+1aFiX7TjWRHWRtIR2NXWWMoBkLDnXQ==",
       "path": "jasmine/2.6.3",
       "hashPath": "jasmine.2.6.3.nupkg.sha512"
+    },
+    "karmagruntjsunit.msbuild/1.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yi8iFjQYr70pMx06pYlrsXrtjlHCxbvFPqwfli6yQlDKQb3iydGR5gaRH1XRAAZV9te4jEBKGpoMEinnovRoHA==",
+      "path": "karmagruntjsunit.msbuild/1.0.7",
+      "hashPath": "karmagruntjsunit.msbuild.1.0.7.nupkg.sha512"
     },
     "microsoft.applicationinsights/2.2.0": {
       "type": "package",

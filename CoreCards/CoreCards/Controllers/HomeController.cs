@@ -50,7 +50,10 @@ namespace CoreCards.Controllers
         /// <param name="method"></param>
         private void assignCards(string method)
         {
-            if (method == Constants.SHUFFLE) { ViewData[Constants.CARDS] = deck.ShuffleDeck(); }
+            if (method == Constants.SHUFFLE)
+            {
+                ViewData[Constants.CARDS] = deck.ShuffleDeck();
+            }
             else if (method == Constants.KING_HIGH){ ViewData[Constants.CARDS] = deck.GetAscendingCardsKingHigh(); }
             else { ViewData[Constants.CARDS] = deck.GetAscendingCardsAceHigh(); }
         }

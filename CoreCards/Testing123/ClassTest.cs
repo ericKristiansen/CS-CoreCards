@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using CoreCards.Models;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace Testing123
 {
@@ -89,6 +90,30 @@ namespace Testing123
         public void EnsureAcesHigh(int index, string expected)
         {
             Assert.That(new Deck().GetAscendingCardsAceHigh().ElementAt<Card>(index).ToString(), Is.EqualTo(expected));
+        }
+
+        /// <summary>
+        /// This test is to ensure that the shuffle method returns a unique shuffle for two
+        /// decks initialized simultaneously.
+        /// </summary>
+        [Test]
+        public void DoubleShuffle()
+        {
+            Deck deckA = new Deck();
+            Deck deckB = new Deck();
+
+            CollectionAssert.AreNotEqual(deckA.ShuffleDeck(), deckB.ShuffleDeck(), new CardComparer());
+        }
+
+        /// <summary>
+        /// This is the comparer class to be used on the collection assert.
+        /// </summary>
+        public class CardComparer : Comparer<Card>
+        {
+            public override int Compare(Card cardA, Card cardB)
+            {
+                return cardA.ToString().CompareTo(cardB.ToString());
+            }
         }
 
     }

@@ -3,4 +3,7 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)karmagruntjsunit.msbuild\1.0.7\build\KarmaGruntJSUnit.MSBuild.Targets" Condition="Exists('$(NuGetPackageRoot)karmagruntjsunit.msbuild\1.0.7\build\KarmaGruntJSUnit.MSBuild.Targets')" />
+  </ImportGroup>
 </Project>
