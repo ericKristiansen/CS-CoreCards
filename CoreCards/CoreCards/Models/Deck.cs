@@ -17,13 +17,13 @@ namespace CoreCards.Models
         /// </summary>
         public Deck()
         {
-            generateDeck();
+            GenerateDeck();
         }
 
         /// <summary>
         /// Generate each card of the deck to a suit and a value.
         /// </summary>
-        private void generateDeck()
+        private void GenerateDeck()
         {
             for (int suit = (int)CardSuit.Hearts; suit <= (int)CardSuit.Spades; suit++)
             {

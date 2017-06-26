@@ -19,7 +19,6 @@
     <Content Include="wwwroot\js\package.json" />
     <Content Include="wwwroot\js\site.js" />
     <Content Include="wwwroot\js\site.min.js" />
-    <Content Include="wwwroot\js\test.html" />
     <Content Include="wwwroot\lib\jasmine-html.js" />
     <Content Include="wwwroot\lib\jasmine.js" />
     <Content Include="wwwroot\lib\jasmine\boot.js" />

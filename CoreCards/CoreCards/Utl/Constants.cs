@@ -19,5 +19,6 @@ namespace CoreCards.Utl
         public static string PNG_EXTENSION => ".png";
 
         public static string YOUR_CARDS => "Behold... Your Cards!!!";
+        public static string HOME_TITLE => "Dis Card Or Dat Card";
     }
 }
